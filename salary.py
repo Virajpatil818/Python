@@ -10,7 +10,6 @@ while True:
     if choice == 5:
         break
    
-    # Switch case statement
     if choice == 1:
        bsalary = int(input("Enter your montholy basic salary:"))
        hra = bsalary*0.1
@@ -60,6 +59,10 @@ while True:
     else :
           tax = 0
 
+    print("Your HRA : ",hra)
+    print("Your DA : ",da)
+    print("Your MA : ",ma)
+    print("Your PF : ",pf)
     print("Your tax : ",tax)
     net = annual - tax
-    print("Your CTC : ",net)
+    print("Your NET : ",net)
